@@ -181,7 +181,7 @@
         const apiStatus = document.getElementById('api-status');
 
         // Función para verificar el estado de la API
-        async function checkAPIStatus(pk_test_51RqVXnFlohupnYdqp7N4QpXCCe8BDCHPdjCbxV6XeU28hgmGNCRk3QS8prKrPaVIo3ko65JrH1CXsyPTag2IvZ8m00jBEIO9rI) {
+        async function checkAPIStatus() {
             try {
                 apiStatus.className = 'status-checking mb-4 p-3 rounded flex items-center';
                 apiStatus.innerHTML = '<div class="w-3 h-3 rounded-full mr-2 bg-yellow-500 animate-pulse"></div><span class="text-sm">Checking Stripe API status...</span>';
