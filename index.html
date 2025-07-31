@@ -172,7 +172,7 @@
     </div>
 
     <script>
-        const stripe = Stripe('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');
+        const stripe = Stripe('pk_test_51RqVXnFlohupnYdqp7N4QpXCCe8BDCHPdjCbxV6XeU28hgmGNCRk3QS8prKrPaVIo3ko65JrH1CXsyPTag2IvZ8m00jBEIO9rI');
         const submitButton = document.getElementById('submit-button');
         const clearButton = document.getElementById('clear-button');
         const bulkInput = document.getElementById('bulk-card-input');
@@ -181,7 +181,7 @@
         const apiStatus = document.getElementById('api-status');
 
         // Función para verificar el estado de la API
-        async function checkAPIStatus() {
+        async function checkAPIStatus(pk_test_51RqVXnFlohupnYdqp7N4QpXCCe8BDCHPdjCbxV6XeU28hgmGNCRk3QS8prKrPaVIo3ko65JrH1CXsyPTag2IvZ8m00jBEIO9rI) {
             try {
                 apiStatus.className = 'status-checking mb-4 p-3 rounded flex items-center';
                 apiStatus.innerHTML = '<div class="w-3 h-3 rounded-full mr-2 bg-yellow-500 animate-pulse"></div><span class="text-sm">Checking Stripe API status...</span>';
